@@ -4,5 +4,5 @@
     <corners android:radius="10dp" /> <!-- Raio dos cantos (bordas arredondadas) -->
     <stroke
         android:color="#000000" /> <!-- Cor da borda -->
-        <!-- Largura da borda -->
+    <!-- Largura da borda -->
 </shape>
