@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe166">
+
+    <!-- Botão no canto superior esquerdo para abrir o menu -->
+
+
+    <!-- Conteúdo principal da tela -->
+
+    <!-- Botões no rodapé -->
+
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="Menu"
+        android:src="@drawable/hamburger"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <!-- Tabela -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerButtons"
+        android:layout_below="@+id/menuButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Coloque aqui o conteúdo principal da tela, como texto, imagens, etc. -->
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif"
+            android:text="Teodoro Almeida"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:background="#ffffff"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewProventos"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:text="Proventos"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+        <!-- Cabeçalho da Tabela -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFBD59"
+                android:padding="8dp"
+                android:text="Descrição"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFBD59"
+                android:padding="8dp"
+                android:textAlignment="textEnd"
+                android:text="Referência"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFBD59"
+                android:padding="8dp"
+                android:textAlignment="textEnd"
+                android:text="Valor"
+                android:textColor="#000000" />
+
+            <!-- Adicione mais colunas conforme necessário -->
+        </TableRow>
+
+        <!-- Linha de Dados 1 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="Horas Trabalhadas"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="176"
+                android:textAlignment="textEnd"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="2884,64"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <!-- Adicione mais células conforme necessário -->
+        </TableRow>
+
+        <!-- Linha de Dados 2 -->
+        <TableRow />
+
+        <!-- Adicione mais linhas conforme necessário -->
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:background="#ffffff"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewDeducoes"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:text="Deduções"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+        <!-- Cabeçalho da Tabela -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFBD59"
+                android:padding="8dp"
+                android:text="Descrição"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFBD59"
+                android:padding="8dp"
+                android:textAlignment="textEnd"
+                android:text="Referência"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFBD59"
+                android:padding="8dp"
+                android:textAlignment="textEnd"
+                android:text="Valor"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Linha de Dados 1 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="INSS"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="12%"
+                android:textAlignment="textEnd"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="259,62"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Linha de Dados 2 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="Vale Transporte"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="3%"
+                android:textAlignment="textEnd"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="86,54"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+        </TableRow>
+        <!-- Linha de Dados 3 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="Imposto de Renda"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="8%"
+                android:textAlignment="textEnd"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="230,77"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+        </TableRow>
+        <!-- Linha de Dados 4 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="FGTS"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="8%"
+                android:textAlignment="textEnd"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview2"
+                android:padding="8dp"
+                android:text="230,77"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="575dp"
+        android:background="#ffffff"
+        android:padding="16dp">
+
+        <!-- Linha de Dados 1 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFF4AB"
+                android:padding="8dp"
+                android:text="Total"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFF4AB"
+                android:padding="8dp"
+                android:text="2221,17"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <!-- Adicione mais células conforme necessário -->
+        </TableRow>
+
+        <!-- Linha de Dados 2 -->
+        <TableRow />
+
+        <!-- Adicione mais linhas conforme necessário -->
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/footerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp"
+        android:background="#3b3737"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/buttonPanel"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Botão 1"
+            android:src="@drawable/grafic" />
+
+        <ImageButton
+            android:id="@+id/buttonEmployee"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Botão 2"
+            android:src="@drawable/customer" />
+
+        <ImageButton
+            android:id="@+id/Button3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Botão 3"
+            android:src="@drawable/wallet_yellow" />
+
+    </LinearLayout>
+</RelativeLayout>
+

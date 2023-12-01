@@ -7,36 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-public class RegisterActivity extends AppCompatActivity {
+public class AlterSearchActivity extends AppCompatActivity {
 
-    private ImageButton imageButton;
     private Button button;
+    private ImageButton imageButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_alter_search);
 
+        button = findViewById(R.id.buttonSearch);
+        imageButton = findViewById(R.id.buttonPanel);
         imageButton = findViewById(R.id.buttonEmployee);
-        button = findViewById(R.id.buttonSave);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(RegisterActivity.this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(RegisterActivity.this, EmployeeActivity.class);
-
-
-                startActivity(intent);
-            }
-        });
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(RegisterActivity.this, PanelActivity.class);
-
+                Intent intent = new Intent(AlterSearchActivity.this, AlterActivity.class);
 
                 startActivity(intent);
             }
@@ -45,7 +34,16 @@ public class RegisterActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this, EmployeeActivity.class);
+                Intent intent = new Intent(AlterSearchActivity.this, PanelActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AlterSearchActivity.this, EmployeeActivity.class);
 
                 startActivity(intent);
             }

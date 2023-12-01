@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
             String password = editTextPassword.getText().toString();
 
             // Verifique as credenciais do usuário (isso é apenas um exemplo)
-            if (username.equals("joyce") && password.equals("1234")) {
+            if (username.equals("barbaracastilho@sl.com") && password.equals("123456789")) {
                 // Credenciais corretas, faça algo, como iniciar uma nova atividade
                 Toast.makeText(LoginActivity.this, "Login bem-sucedido", Toast.LENGTH_SHORT).show();
                 // Iniciar a próxima atividade ou executar a ação desejada

@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="sans-serif"
-            android:text="Cadastrar"
+            android:text="Alterar"
             android:textSize="24sp"
             android:textStyle="bold"
             android:typeface="normal" />
@@ -60,7 +60,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/edittext_rounded_border"
             android:backgroundTint="#CACACA"
-            android:hint="Nome Completo"
+            android:text="Teodoro Campos"
             android:padding="10dp"
             android:textColor="#817E7E"
             android:textSize="12sp"
@@ -78,7 +78,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/edittext_rounded_border"
             android:backgroundTint="#CACACA"
-            android:hint="E-mail"
+            android:text="teodorocampos@sl.com"
             android:padding="10dp"
             android:textColor="#817E7E"
             android:textSize="12sp"
@@ -97,7 +97,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/edittext_rounded_border"
             android:backgroundTint="#CACACA"
-            android:hint="Data de Nascimento"
+            android:text="23-07-1985"
             android:padding="10dp"
             android:textColor="#817E7E"
             android:textSize="12sp"
@@ -116,7 +116,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/edittext_rounded_border"
             android:backgroundTint="#CACACA"
-            android:hint="Valor Hora"
+            android:text="16.39"
             android:padding="10dp"
             android:textColor="#817E7E"
             android:textSize="12sp"
@@ -134,7 +134,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/edittext_rounded_border"
             android:backgroundTint="#CACACA"
-            android:hint="Cargo"
+            android:text="Professor"
             android:padding="10dp"
             android:textColor="#817E7E"
             android:textSize="12sp"
@@ -143,18 +143,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <Button
-            android:id="@+id/buttonSave"
-            android:layout_width="236dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="62dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
-            android:backgroundTint="#FFE985"
-            android:text="Salvar"
-            android:textColor="#3b3737"
-            android:textSize="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="118dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:backgroundTint="#FFE985"
+                android:text="Cancelar"
+                android:textColor="#3b3737"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonAlter"
+                android:layout_width="118dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:backgroundTint="#FFE985"
+                android:text="Alterar"
+                android:textColor="#3b3737"
+                android:textSize="16sp" />
+
+        </LinearLayout>
 
 
     </LinearLayout>

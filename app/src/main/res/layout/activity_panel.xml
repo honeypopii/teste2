@@ -132,7 +132,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
-            android:id="@+id/ButtonWallet"
+            android:id="@+id/buttonWallet"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_alignParentStart="true"

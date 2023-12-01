@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="#FFBD59" /> <!-- Cor do fundo do <link>TextView</link> -->
+<stroke android:color="#D9D9D9" android:width="1dp" /> <!-- Cor e largura da borda -->
+<corners android:radius="1dp" /> <!-- Raio dos cantos do <link>TextView</link> -->
+</shape>
